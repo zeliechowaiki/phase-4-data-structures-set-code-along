@@ -275,7 +275,7 @@ Examples:
 ```rb
 set = MySet[1,2,3]
 puts set.inspect
-# => #<MySet {1, 2, 3}>
+# => #<MySet: {1, 2, 3}>
 
 set.each do |el|
   puts el
@@ -286,7 +286,7 @@ end
 
 set.clear
 puts set.inspect
-# => #<MySet {}>
+# => #<MySet: {}>
 ```
 
 ## Conclusion
