@@ -62,41 +62,41 @@ describe MySet do
   end
 
   # BONUS! Uncomment for an extra challenge.
-  # describe "Bonus methods ⭐️" do
-  #   describe ".[]" do
-  #     it "can be initialized using bracket notation" do
-  #       set_with_bracket_initializer = MySet[1,2,3]
-  #       expect(set_with_bracket_initializer.instance_variable_get(:@hash)).to eq({ 1 => true, 2 => true, 3 => true })
-  #     end
-  #   end
+  describe "Bonus methods ⭐️" do
+    describe ".[]" do
+      it "can be initialized using bracket notation" do
+        set_with_bracket_initializer = MySet[1,2,3]
+        expect(set_with_bracket_initializer.instance_variable_get(:@hash)).to eq({ 1 => true, 2 => true, 3 => true })
+      end
+    end
 
-  # describe "#clear" do
-  #   it "removes all the items from the set" do
-  #     set.clear
-  #     expect(set.instance_variable_get(:@hash)).to eq({})
-  #   end
+  describe "#clear" do
+    it "removes all the items from the set" do
+      set.clear
+      expect(set.instance_variable_get(:@hash)).to eq({})
+    end
     
-  #   it "returns the updated set" do
-  #     expect(set.clear).to be(set)
-  #   end
-  # end
+    it "returns the updated set" do
+      expect(set.clear).to be(set)
+    end
+  end
 
-  #   describe "#each" do
-  #     it "iterates over each object in the set" do
-  #       # example use:
-  #       # set.each { |value| puts value }
-  #       expect { |b| set.each(&b) }.to yield_successive_args(1, 2, 3)
-  #     end
+    describe "#each" do
+      it "iterates over each object in the set" do
+        # example use:
+        # set.each { |value| puts value }
+        expect { |b| set.each(&b) }.to yield_successive_args(1, 2, 3)
+      end
   
-  #     it "returns the set" do
-  #       expect(set.each { }).to be(set)
-  #     end
-  #   end
+      it "returns the set" do
+        expect(set.each { }).to be(set)
+      end
+    end
   
-  #   describe "#inspect" do
-  #     it "prints the set in a readable format" do
-  #       expect(set.inspect).to eq("#<MySet: {1, 2, 3}>")
-  #     end
-  #   end
-  # end
+    describe "#inspect" do
+      it "prints the set in a readable format" do
+        expect(set.inspect).to eq("#<MySet: {1, 2, 3}>")
+      end
+    end
+  end
 end
