@@ -32,7 +32,7 @@ reasons:
   process to building data structures.
 - Not all languages implement data structures in the same way. For example, the
   [`Set` in JavaScript][js set] preserves the order that elements were inserted
-  into the `Set`, where as the [`Set` in Ruby][ruby set] does not.
+  into the `Set`, whereas the [`Set` in Ruby][ruby set] does not.
 
 When building data structures from scratch, you'll often use other built-in data
 structures to support your data structure and hold data. A key consideration
@@ -266,7 +266,7 @@ methods** section in the test file to try these out.
 - `MySet#clear`: Removes **all** the items from the set, and returns the updated
   set.
 - `MySet#each`: Iterates over each item in the set, and returns the set. Hint:
-  you can use the build-in `#each` enumerable method. Read up on
+  you can use the built-in `#each` enumerable method. Read up on
   [Ruby blocks](https://mixandgo.com/learn/ruby-blocks) for help with syntax.
 - `MySet#inspect`: Prints the set in a readable format.
 
